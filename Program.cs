@@ -38,21 +38,29 @@ namespace Caja
                         Console.WriteLine($"Nombre: {producto.Nombre}, Precio: {producto.Precio}");
                     }
 
-                    Console.WriteLine("Selecciona los productos que deseas (escribe 'terminar' para finalizar la selección):");
+                    
 
                     // Simulamos la selección de productos
                     var productosSeleccionados = new List<Producto>();
 
                     while (true)
                     {
+                        Console.WriteLine("Selecciona los productos que deseas (escribe 'terminar' para finalizar la selección):");
                         var seleccion = Console.ReadLine();
                         if (seleccion.ToLower() == "terminar")
+                            Console.WriteLine("Gracias por su Compra");
                             break;
 
                         var productoSeleccionado = productosDisponibles.Find(p => p.Nombre == seleccion);
                         if (productoSeleccionado != null)
                         {
                             productosSeleccionados.Add(productoSeleccionado);
+                            Console.WriteLine("Su lista de compras es: ");
+                            foreach (var producto in productosSeleccionados)
+                            {
+                                Console.WriteLine($"Nombre: {producto.Nombre}, Precio: {producto.Precio}");
+                                
+                            }
                         }
                         else
                         {
