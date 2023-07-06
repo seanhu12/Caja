@@ -50,8 +50,7 @@ namespace Caja
                         if (seleccion.ToLower() == "terminar")
                             Console.WriteLine("Gracias por su Compra");
                             break;
-
-                        var productoSeleccionado = productosDisponibles.Find(p => p.Nombre == seleccion);
+                            var productoSeleccionado = productosDisponibles.Find(p => p.Nombre == seleccion);
                         if (productoSeleccionado != null)
                         {
                             productosSeleccionados.Add(productoSeleccionado);
