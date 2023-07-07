@@ -9,9 +9,11 @@ namespace Caja
 {
     class Program
     {
+        static List<Producto> ProductosDisponibles = new List<Producto>();
+
         static void Main(string[] args)
         {
-            var factory = new ConnectionFactory() { HostName = "localhost" }; // Cambia el valor si RabbitMQ no se encuentra en localhost
+            var factory = new ConnectionFactory() { HostName = "localhost" };
             using (var connection = factory.CreateConnection())
             using (var channel = connection.CreateModel())
             {
@@ -31,43 +33,98 @@ namespace Caja
                 productosDisponiblesConsumer.Received += (model, ea) =>
                 {
                     var message = Encoding.UTF8.GetString(ea.Body.ToArray());
-                    var productosDisponibles = JsonConvert.DeserializeObject<List<Producto>>(message);
-                    Console.WriteLine("Listado de productos disponibles recibido:");
-                    foreach (var producto in productosDisponibles)
+                    ProductosDisponibles = JsonConvert.DeserializeObject<List<Producto>>(message);
+                };
+
+                channel.BasicConsume(queue: "productos_disponibles",
+                                     autoAck: true,
+                                     consumer: productosDisponiblesConsumer);
+
+                MostrarMenu(channel);
+
+                Console.WriteLine("Presiona Enter para cerrar la aplicación...");
+
+                while (Console.ReadKey().Key != ConsoleKey.Escape) { }
+            }
+        }
+
+        static void MostrarMenu(IModel channel)
+        {
+            while (true)
+            {
+                Console.WriteLine("\n==== Menú ====");
+                Console.WriteLine("1. Mostrar productos disponibles");
+                Console.WriteLine("2. Realizar una compra");
+                Console.WriteLine("3. Salir");
+
+                Console.WriteLine("Ingrese el número de la opción deseada:");
+                var opcionStr = Console.ReadLine();
+                int opcion;
+                if (!int.TryParse(opcionStr, out opcion))
+                {
+                    Console.WriteLine("Opción no válida.");
+                    continue;
+                }
+
+                switch (opcion)
+                {
+                    case 1:
+                        MostrarProductosDisponibles();
+                        break;
+                    case 2:
+                        RealizarCompra(channel);
+                        break;
+                    case 3:
+                        Console.WriteLine("Hasta luego!");
+                        return;
+                    default:
+                        Console.WriteLine("Opción no válida.");
+                        break;
+                }
+            }
+        }
+
+        static void MostrarProductosDisponibles()
+        {
+            Console.WriteLine("\nProductos disponibles:");
+            foreach (var producto in ProductosDisponibles)
+            {
+                Console.WriteLine($"Nombre: {producto.Nombre}, Precio: {producto.Precio}");
+            }
+        }
+
+        static void RealizarCompra(IModel channel)
+        {
+            Console.WriteLine("\nIngrese el nombre de la sucursal donde se realiza la compra:");
+            var sucursal = Console.ReadLine();
+
+            var productosSeleccionados = new Dictionary<string, int>();
+            int total = 0;
+
+            while (true)
+            {
+                Console.WriteLine("\nSeleccione un producto para agregar a la boleta (escribe 'terminar' para finalizar la compra):");
+                var seleccion = Console.ReadLine();
+
+                if (seleccion.ToLower() == "terminar")
+                {
+                    Console.WriteLine("\nGracias por su compra! Aquí está su boleta:");
+                    Console.WriteLine($"Sucursal: {sucursal}");
+                    foreach (var producto in productosSeleccionados)
                     {
-                        Console.WriteLine($"Nombre: {producto.Nombre}, Precio: {producto.Precio}");
+                        Console.WriteLine($"Producto: {producto.Key}, Cantidad: {producto.Value}");
                     }
+                    Console.WriteLine($"Total: {total}");
 
-                    
-
-                    // Simulamos la selección de productos
-                    var productosSeleccionados = new List<Producto>();
-
-                    while (true)
+                    var compra = new Compra
                     {
-                        Console.WriteLine("Selecciona los productos que deseas (escribe 'terminar' para finalizar la selección):");
-                        var seleccion = Console.ReadLine();
-                        if (seleccion.ToLower() == "terminar")
-                            Console.WriteLine("Gracias por su Compra");
-                            break;
-                            var productoSeleccionado = productosDisponibles.Find(p => p.Nombre == seleccion);
-                        if (productoSeleccionado != null)
-                        {
-                            productosSeleccionados.Add(productoSeleccionado);
-                            Console.WriteLine("Su lista de compras es: ");
-                            foreach (var producto in productosSeleccionados)
-                            {
-                                Console.WriteLine($"Nombre: {producto.Nombre}, Precio: {producto.Precio}");
-                                
-                            }
-                        }
-                        else
-                        {
-                            Console.WriteLine("Producto no disponible. Inténtalo de nuevo.");
-                        }
-                    }
+                        Sucursal = sucursal,
+                        Fecha = DateTime.Now,
+                        Productos = productosSeleccionados,
+                        Total = total
+                    };
 
-                    var productosSeleccionadosMessage = JsonConvert.SerializeObject(productosSeleccionados);
+                    var productosSeleccionadosMessage = JsonConvert.SerializeObject(compra);
                     var body = Encoding.UTF8.GetBytes(productosSeleccionadosMessage);
 
                     channel.BasicPublish(exchange: "",
@@ -76,16 +133,37 @@ namespace Caja
                                          body: body);
 
                     Console.WriteLine("Productos seleccionados enviados a Inventario.");
-                };
+                    break;
+                }
 
-                channel.BasicConsume(queue: "productos_disponibles",
-                                     autoAck: true,
-                                     consumer: productosDisponiblesConsumer);
+                var productoSeleccionado = ProductosDisponibles.Find(p => p.Nombre == seleccion);
+                if (productoSeleccionado != null)
+                {
+                    Console.WriteLine("Ingrese la cantidad que desea comprar:");
+                    var cantidadStr = Console.ReadLine();
+                    int cantidad;
+                    if (!int.TryParse(cantidadStr, out cantidad))
+                    {
+                        Console.WriteLine("Cantidad no válida. Inténtalo de nuevo.");
+                        continue;
+                    }
 
-                Console.WriteLine("Presiona Enter para cerrar la aplicación...");
+                    if (productosSeleccionados.ContainsKey(productoSeleccionado.Nombre))
+                    {
+                        productosSeleccionados[productoSeleccionado.Nombre] += cantidad;
+                    }
+                    else
+                    {
+                        productosSeleccionados.Add(productoSeleccionado.Nombre, cantidad);
+                    }
 
-                // Agregar un bucle para mantener viva la aplicación hasta que se presione una tecla diferente de Enter
-                while (Console.ReadKey().Key != ConsoleKey.Escape) { }
+                    total += productoSeleccionado.Precio * cantidad;
+                    Console.WriteLine($"Producto {productoSeleccionado.Nombre} agregado a la boleta.");
+                }
+                else
+                {
+                    Console.WriteLine("Producto no disponible. Inténtalo de nuevo.");
+                }
             }
         }
     }
@@ -94,5 +172,13 @@ namespace Caja
     {
         public string Nombre { get; set; }
         public int Precio { get; set; }
+    }
+
+    class Compra
+    {
+        public string Sucursal { get; set; }
+        public DateTime Fecha { get; set; }
+        public Dictionary<string, int> Productos { get; set; }
+        public int Total { get; set; }
     }
 }
