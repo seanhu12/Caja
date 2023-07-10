@@ -166,19 +166,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sebax\\.nuget\\packages\\": {}
+    "C:\\Users\\choch\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sebax\\Desktop\\Nueva carpeta\\Caja\\Caja.csproj",
+      "projectUniqueName": "C:\\Users\\choch\\OneDrive\\Documentos\\Informatica\\Cuarto año\\Septimo semestre\\Proyecto desarrollo de soluciones\\Proyecto2\\Caja\\Caja.csproj",
       "projectName": "Caja",
-      "projectPath": "C:\\Users\\sebax\\Desktop\\Nueva carpeta\\Caja\\Caja.csproj",
-      "packagesPath": "C:\\Users\\sebax\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sebax\\Desktop\\Nueva carpeta\\Caja\\obj\\",
+      "projectPath": "C:\\Users\\choch\\OneDrive\\Documentos\\Informatica\\Cuarto año\\Septimo semestre\\Proyecto desarrollo de soluciones\\Proyecto2\\Caja\\Caja.csproj",
+      "packagesPath": "C:\\Users\\choch\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\choch\\OneDrive\\Documentos\\Informatica\\Cuarto año\\Septimo semestre\\Proyecto desarrollo de soluciones\\Proyecto2\\Caja\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\sebax\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\choch\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -229,7 +229,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -16,3 +16,21 @@ C:\Users\sebax\Desktop\Nueva carpeta\Caja\obj\Debug\net7.0\refint\Caja.dll
 C:\Users\sebax\Desktop\Nueva carpeta\Caja\obj\Debug\net7.0\Caja.pdb
 C:\Users\sebax\Desktop\Nueva carpeta\Caja\obj\Debug\net7.0\Caja.genruntimeconfig.cache
 C:\Users\sebax\Desktop\Nueva carpeta\Caja\obj\Debug\net7.0\ref\Caja.dll
+C:\Users\choch\OneDrive\Documentos\Informatica\Cuarto año\Septimo semestre\Proyecto desarrollo de soluciones\Proyecto2\Caja\bin\Debug\net7.0\Caja.exe
+C:\Users\choch\OneDrive\Documentos\Informatica\Cuarto año\Septimo semestre\Proyecto desarrollo de soluciones\Proyecto2\Caja\bin\Debug\net7.0\Caja.deps.json
+C:\Users\choch\OneDrive\Documentos\Informatica\Cuarto año\Septimo semestre\Proyecto desarrollo de soluciones\Proyecto2\Caja\bin\Debug\net7.0\Caja.runtimeconfig.json
+C:\Users\choch\OneDrive\Documentos\Informatica\Cuarto año\Septimo semestre\Proyecto desarrollo de soluciones\Proyecto2\Caja\bin\Debug\net7.0\Caja.dll
+C:\Users\choch\OneDrive\Documentos\Informatica\Cuarto año\Septimo semestre\Proyecto desarrollo de soluciones\Proyecto2\Caja\bin\Debug\net7.0\Caja.pdb
+C:\Users\choch\OneDrive\Documentos\Informatica\Cuarto año\Septimo semestre\Proyecto desarrollo de soluciones\Proyecto2\Caja\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\choch\OneDrive\Documentos\Informatica\Cuarto año\Septimo semestre\Proyecto desarrollo de soluciones\Proyecto2\Caja\bin\Debug\net7.0\RabbitMQ.Client.dll
+C:\Users\choch\OneDrive\Documentos\Informatica\Cuarto año\Septimo semestre\Proyecto desarrollo de soluciones\Proyecto2\Caja\obj\Debug\net7.0\Caja.csproj.AssemblyReference.cache
+C:\Users\choch\OneDrive\Documentos\Informatica\Cuarto año\Septimo semestre\Proyecto desarrollo de soluciones\Proyecto2\Caja\obj\Debug\net7.0\Caja.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\choch\OneDrive\Documentos\Informatica\Cuarto año\Septimo semestre\Proyecto desarrollo de soluciones\Proyecto2\Caja\obj\Debug\net7.0\Caja.AssemblyInfoInputs.cache
+C:\Users\choch\OneDrive\Documentos\Informatica\Cuarto año\Septimo semestre\Proyecto desarrollo de soluciones\Proyecto2\Caja\obj\Debug\net7.0\Caja.AssemblyInfo.cs
+C:\Users\choch\OneDrive\Documentos\Informatica\Cuarto año\Septimo semestre\Proyecto desarrollo de soluciones\Proyecto2\Caja\obj\Debug\net7.0\Caja.csproj.CoreCompileInputs.cache
+C:\Users\choch\OneDrive\Documentos\Informatica\Cuarto año\Septimo semestre\Proyecto desarrollo de soluciones\Proyecto2\Caja\obj\Debug\net7.0\Caja.csproj.CopyComplete
+C:\Users\choch\OneDrive\Documentos\Informatica\Cuarto año\Septimo semestre\Proyecto desarrollo de soluciones\Proyecto2\Caja\obj\Debug\net7.0\Caja.dll
+C:\Users\choch\OneDrive\Documentos\Informatica\Cuarto año\Septimo semestre\Proyecto desarrollo de soluciones\Proyecto2\Caja\obj\Debug\net7.0\refint\Caja.dll
+C:\Users\choch\OneDrive\Documentos\Informatica\Cuarto año\Septimo semestre\Proyecto desarrollo de soluciones\Proyecto2\Caja\obj\Debug\net7.0\Caja.pdb
+C:\Users\choch\OneDrive\Documentos\Informatica\Cuarto año\Septimo semestre\Proyecto desarrollo de soluciones\Proyecto2\Caja\obj\Debug\net7.0\Caja.genruntimeconfig.cache
+C:\Users\choch\OneDrive\Documentos\Informatica\Cuarto año\Septimo semestre\Proyecto desarrollo de soluciones\Proyecto2\Caja\obj\Debug\net7.0\ref\Caja.dll
