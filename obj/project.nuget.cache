@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "zQZvYncFOjMKp5jcVxS02SQ85ItelqAuLUOaZN4CYVCOr4xsDx0Ocx3u3SqxBqNupdm7qbLgNmKok6j7Kvj9tw==",
+  "dgSpecHash": "FIPeUN8hfLJtIyTgYgzEDNlQZZOo5V+RWQGd2IRU+qSwdNfdOcqh/X8fLAGx8L6a7ulFgE637OXA9mlr2X87Kw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\choch\\OneDrive\\Documentos\\Informatica\\Cuarto año\\Septimo semestre\\Proyecto desarrollo de soluciones\\Proyecto2\\Caja\\Caja.csproj",
+  "projectFilePath": "C:\\Users\\Mi PC\\Desktop\\taller\\Caja\\Caja.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\choch\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
-    "C:\\Users\\choch\\.nuget\\packages\\rabbitmq.client\\6.5.0\\rabbitmq.client.6.5.0.nupkg.sha512",
-    "C:\\Users\\choch\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
-    "C:\\Users\\choch\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512"
+    "C:\\Users\\Mi PC\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Mi PC\\.nuget\\packages\\rabbitmq.client\\6.5.0\\rabbitmq.client.6.5.0.nupkg.sha512",
+    "C:\\Users\\Mi PC\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\Mi PC\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -34,3 +34,21 @@ C:\Users\choch\OneDrive\Documentos\Informatica\Cuarto año\Septimo semestre\Proy
 C:\Users\choch\OneDrive\Documentos\Informatica\Cuarto año\Septimo semestre\Proyecto desarrollo de soluciones\Proyecto2\Caja\obj\Debug\net7.0\Caja.pdb
 C:\Users\choch\OneDrive\Documentos\Informatica\Cuarto año\Septimo semestre\Proyecto desarrollo de soluciones\Proyecto2\Caja\obj\Debug\net7.0\Caja.genruntimeconfig.cache
 C:\Users\choch\OneDrive\Documentos\Informatica\Cuarto año\Septimo semestre\Proyecto desarrollo de soluciones\Proyecto2\Caja\obj\Debug\net7.0\ref\Caja.dll
+C:\Users\Mi PC\Desktop\taller\Caja\bin\Debug\net7.0\Caja.exe
+C:\Users\Mi PC\Desktop\taller\Caja\bin\Debug\net7.0\Caja.deps.json
+C:\Users\Mi PC\Desktop\taller\Caja\bin\Debug\net7.0\Caja.runtimeconfig.json
+C:\Users\Mi PC\Desktop\taller\Caja\bin\Debug\net7.0\Caja.dll
+C:\Users\Mi PC\Desktop\taller\Caja\bin\Debug\net7.0\Caja.pdb
+C:\Users\Mi PC\Desktop\taller\Caja\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\Mi PC\Desktop\taller\Caja\bin\Debug\net7.0\RabbitMQ.Client.dll
+C:\Users\Mi PC\Desktop\taller\Caja\obj\Debug\net7.0\Caja.csproj.AssemblyReference.cache
+C:\Users\Mi PC\Desktop\taller\Caja\obj\Debug\net7.0\Caja.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mi PC\Desktop\taller\Caja\obj\Debug\net7.0\Caja.AssemblyInfoInputs.cache
+C:\Users\Mi PC\Desktop\taller\Caja\obj\Debug\net7.0\Caja.AssemblyInfo.cs
+C:\Users\Mi PC\Desktop\taller\Caja\obj\Debug\net7.0\Caja.csproj.CoreCompileInputs.cache
+C:\Users\Mi PC\Desktop\taller\Caja\obj\Debug\net7.0\Caja.csproj.CopyComplete
+C:\Users\Mi PC\Desktop\taller\Caja\obj\Debug\net7.0\Caja.dll
+C:\Users\Mi PC\Desktop\taller\Caja\obj\Debug\net7.0\refint\Caja.dll
+C:\Users\Mi PC\Desktop\taller\Caja\obj\Debug\net7.0\Caja.pdb
+C:\Users\Mi PC\Desktop\taller\Caja\obj\Debug\net7.0\Caja.genruntimeconfig.cache
+C:\Users\Mi PC\Desktop\taller\Caja\obj\Debug\net7.0\ref\Caja.dll

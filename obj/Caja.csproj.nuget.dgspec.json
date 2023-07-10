@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\choch\\OneDrive\\Documentos\\Informatica\\Cuarto año\\Septimo semestre\\Proyecto desarrollo de soluciones\\Proyecto2\\Caja\\Caja.csproj": {}
+    "C:\\Users\\Mi PC\\Desktop\\taller\\Caja\\Caja.csproj": {}
   },
   "projects": {
-    "C:\\Users\\choch\\OneDrive\\Documentos\\Informatica\\Cuarto año\\Septimo semestre\\Proyecto desarrollo de soluciones\\Proyecto2\\Caja\\Caja.csproj": {
+    "C:\\Users\\Mi PC\\Desktop\\taller\\Caja\\Caja.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\choch\\OneDrive\\Documentos\\Informatica\\Cuarto año\\Septimo semestre\\Proyecto desarrollo de soluciones\\Proyecto2\\Caja\\Caja.csproj",
+        "projectUniqueName": "C:\\Users\\Mi PC\\Desktop\\taller\\Caja\\Caja.csproj",
         "projectName": "Caja",
-        "projectPath": "C:\\Users\\choch\\OneDrive\\Documentos\\Informatica\\Cuarto año\\Septimo semestre\\Proyecto desarrollo de soluciones\\Proyecto2\\Caja\\Caja.csproj",
-        "packagesPath": "C:\\Users\\choch\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\choch\\OneDrive\\Documentos\\Informatica\\Cuarto año\\Septimo semestre\\Proyecto desarrollo de soluciones\\Proyecto2\\Caja\\obj\\",
+        "projectPath": "C:\\Users\\Mi PC\\Desktop\\taller\\Caja\\Caja.csproj",
+        "packagesPath": "C:\\Users\\Mi PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mi PC\\Desktop\\taller\\Caja\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\choch\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Mi PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -65,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
